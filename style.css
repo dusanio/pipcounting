@@ -49,7 +49,7 @@ body {
 
 .triangle1-top {
     width: 60px;
-    height: 260px;
+    height: 240px;
     background: linear-gradient(90deg, #4c6359, #6c8379);
     clip-path: polygon(0 0, 50% 100%, 100% 0);
     display: inline-block;
@@ -59,7 +59,7 @@ body {
 
 .triangle1-bottom {
     width: 60px;
-    height: 260px;
+    height: 240px;
     background: linear-gradient(90deg, #9ea99a, #aec9aa);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     display: inline-block;
@@ -67,7 +67,7 @@ body {
 
 .triangle2-bottom {
     width: 60px;
-    height: 260px;
+    height: 240px;
     background: linear-gradient(90deg, #4c6359, #6c8379);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     display: inline-block;
@@ -75,7 +75,7 @@ body {
 
 .triangle2-top {
     width: 60px;
-    height: 260px;
+    height: 240px;
     background: linear-gradient(90deg, #9ea99a, #aec9aa);
     clip-path: polygon(0 0, 50% 100%, 100% 0);
     /* clip-path: polygon(0 1%, 100% 0, 55% 100%, 45% 100%); */
@@ -119,19 +119,19 @@ body {
 
     #checker2
     {
-        margin-top: 45px;
+        margin-top: 48px;
     }
     #checker3
     {
-        margin-top: 90px;
+        margin-top: 96px;
     }
     #checker4
     {
-        margin-top: 135px;
+        margin-top: 144px;
     }
     #checker5
     {
-        margin-top: 180px;
+        margin-top: 192px;
     }
 
 
