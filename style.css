@@ -136,7 +136,7 @@ body {
 
 
     .circle-black {
-        background: radial-gradient(#000, #000, #333, #000, #333, #000, #333);
+        background: radial-gradient(#333, #333, #000, #333, #000, #333, #000);
         border-radius: 50%;
         width: 108px;
         height: 108px;
