@@ -169,7 +169,7 @@ body {
     }
 
     .between-gap{
-        margin-top: 326px;
+        margin-top: 325px;
     }
     
 
@@ -223,7 +223,7 @@ body {
     .left-side{
         position: absolute;
         float: left;
-        left: 40px;
+        left: 39px;
         top: 40px;
         z-index: 1000;
     
@@ -232,7 +232,7 @@ body {
     .right-side{
         position: absolute;
         float: left;
-        left: 770px;
+        left: 769px;
         top: 40px;
         z-index: 1000;
     }
