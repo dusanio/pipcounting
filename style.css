@@ -1,6 +1,7 @@
 body {
     margin-top: auto;
     margin-bottom: auto;
+
     /* background-color: #454; */
     /* background-image: url("nature.jpg") */
     /* background-repeat: no-repeat; */
@@ -22,7 +23,7 @@ body {
 
 .between-gap{
     display: flex;
-    margin-top: 180px;
+    margin-top: 184px;
 }
 
 .circle-black {
@@ -84,22 +85,40 @@ body {
 }
 
 .board {
-    margin: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    margin-top: 29%;
+    margin-left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    width: 816px;
+    height: 708px;
 
     justify-content: center;
     display: flex;
     /* margin-top: 30px; */
     /* margin-bottom: auto; */
-    border: 25px solid;
+    /*border: 24px solid;*/
     width: fit-content;
     border-image-slice: 1;
     background-color: #748b7c;
 
+}
+
+.left-side{
+    position: absolute;
+    float: left;
+    left: 23px;
+    top: 22px;
+    z-index: 1000;
+
+}
+
+.right-side{
+    position: absolute;
+    float: left;
+    left: 430px;
+    top: 22px;
+    z-index: 1000;
 }
 
 .border-gradient {
@@ -134,6 +153,9 @@ body {
         margin-top: 192px;
     }
 
+    .frame{
+        background-image: url("board.png");
+    }
 
     .circle-black {
         background: radial-gradient(#333, #333, #000, #333, #000, #333, #000);
@@ -147,9 +169,9 @@ body {
     }
 
     .between-gap{
-        display: flex;
-        margin-top: 324px;
+        margin-top: 326px;
     }
+    
 
     .circle-white {
         background: radial-gradient(#fff, #fff, #ccc, #fff, #ccc, #fff, #ccc);
@@ -198,6 +220,23 @@ body {
         border-radius: 0px;
     }
 
+    .left-side{
+        position: absolute;
+        float: left;
+        left: 40px;
+        top: 40px;
+        z-index: 1000;
+    
+    }
+
+    .right-side{
+        position: absolute;
+        float: left;
+        left: 770px;
+        top: 40px;
+        z-index: 1000;
+    }
+
     .board
     {
     margin: 0;
@@ -209,9 +248,11 @@ body {
 
     justify-content: center;
     display: flex;
+    width: 1456px;
+    height: 1268px;
     /*margin-top: 30px;*/
     /*margin-bottom: auto;*/
-    border: 40px solid;
+    /*border: 40px solid;*/
     width: fit-content;
     border-image-slice: 1;
     background-color: #748b7c;
