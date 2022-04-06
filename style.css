@@ -27,6 +27,7 @@ body {
 }
 
 .circle-black {
+    color: #fff;
     display: none;
     background: radial-gradient(#333, #333, #000, #333, #000, #333, #000);
     border-radius: 50%;
@@ -36,6 +37,14 @@ body {
     position: relative;
     right: 60px;
     margin-right: -60px;
+}
+
+.circle-shift5, .circle-shift5_bottom {
+  font-weight: bold;
+  font-family: Verdana;
+  font-size: 20pt;
+  /*display: flex;*/
+  line-height: 108px;
 }
 
 .circle-shift2 {
