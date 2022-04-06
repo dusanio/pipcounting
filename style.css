@@ -37,18 +37,34 @@ body {
     margin-right: -60px;
 }
 
-    .circle-shift2 {
-	top: 60px;
-    }
-    .circle-shift3 {
-	top: 120px;
-    }
-    .circle-shift4 {
-	top: 180px;
-    }
-    .circle-shift5 {
-	top: 240px;
-    }
+.circle-shift2 {
+top: 60px;
+}
+.circle-shift3 {
+top: 120px;
+}
+.circle-shift4 {
+top: 180px;
+}
+.circle-shift5 {
+top: 240px;
+}
+
+.circle-shift1_bottom{
+top: 180px;
+}
+.circle-shift2_bottom {
+top: 120px;
+}
+.circle-shift3_bottom {
+top: 60px;
+}
+.circle-shift4_bottom {
+top: 0px;
+}
+.circle-shift5_bottom {
+top: -60px;
+}
 
 .circle-white {
     background: radial-gradient(#fff, #fff, #ccc, #fff, #ccc, #fff, #ccc);
@@ -149,23 +165,6 @@ body {
     background: radial-gradient(#8e5f4f, #6e4f3f, #8e5f4f, #6e4f3f);
     }
 
-    #checker1-2, checker2-2, checker3-2, checker4-2, checker5-2, checker6-2, checker7-2, checker8-2, checker9-2, checker10-2, checker11-2, checker12-2, checker13-2, checker14-2, checker15-2, checker16-2, checker17-2, checker18-2, checker19-2, checker20-2, checker21-2, checker22-2, checker23-2, checker24-2
-    {
-        /*margin-top: 48px;*/
-        top: 60px; 
-    }
-    #checker3
-    {
-        margin-top: 96px;
-    }
-    #checker4
-    {
-        margin-top: 144px;
-    }
-    #checker5
-    {
-        margin-top: 192px;
-    }
 
     .frame{
         background-image: url("board.png");
@@ -193,6 +192,22 @@ body {
     }
     .circle-shift5{
 	top: 432px;
+    }
+
+    .circle-shift1_bottom{
+    top: 324px;
+    }
+    .circle-shift2_bottom {
+    top: 216px;
+    }
+    .circle-shift3_bottom {
+    top: 108px;
+    }
+    .circle-shift4_bottom {
+    top: 0px;
+    }
+    .circle-shift5_bottom {
+    top: -108px;
     }
 
     .between-gap{
