@@ -27,6 +27,7 @@ body {
 }
 
 .circle-black {
+    display: none;
     background: radial-gradient(#333, #333, #000, #333, #000, #333, #000);
     border-radius: 50%;
     width: 60px;
@@ -67,6 +68,7 @@ top: -60px;
 }
 
 .circle-white {
+    display: none;
     background: radial-gradient(#fff, #fff, #ccc, #fff, #ccc, #fff, #ccc);
     border-radius: 50%;
     width: 60px;
@@ -171,6 +173,7 @@ top: -60px;
     }
 
     .circle-black {
+        display: none;
         background: radial-gradient(#333, #333, #000, #333, #000, #333, #000);
         border-radius: 50%;
         width: 108px;
@@ -216,6 +219,7 @@ top: -60px;
     
 
     .circle-white {
+        display: none;
         background: radial-gradient(#fff, #fff, #ccc, #fff, #ccc, #fff, #ccc);
         border-radius: 50%;
         width: 108px;
