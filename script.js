@@ -1,5 +1,21 @@
 const NUM_PIPS = 24;
 const MAX_CHECKERS = 15;
+var initial_time;
+var pip_count;
+
+function submitGuess()
+{
+  var final_time = new Date();
+  divDebug.innerHTML = final_time - initial_time;
+  if (parseInt(inpGuess.value) == pip_count)
+  {
+    divDebug.innerHTML = "Correct! Time: " + ((final_time - initial_time) / 1000) + " sec";
+  }
+  else
+  {
+    divDebug.innerHTML = "Correct answer was " + pip_count;
+  }
+}
 
 
 
@@ -7,6 +23,8 @@ function init()
 {
   //pip15.innerHTML = "<div class='circle-black' id='checker1'></div>";
   //document.getElementById("checker13_1_white").style.display = "block";
+
+  initial_time = new Date();
 
   var checkers = [];
   for (var i = 1; i <= NUM_PIPS; ++i)
@@ -66,7 +84,7 @@ function init()
 
 
 
-
+  pip_count = 0;
   for (var i = 1; i < checkers.length; ++i)
   {
     for (var j = 1; j <= 5; ++j)
@@ -78,8 +96,10 @@ function init()
           document.getElementById("checker" + i + "_" + j + "_white").innerHTML = checkers[i];
       }
     }
+    pip_count += checkers[i] * i;
   }
-  divDebug.innerHTML = checkers;
+    
+  //divDebug.innerHTML = pip_count;
 }
 
 
