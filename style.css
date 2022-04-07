@@ -407,13 +407,15 @@ top: -60px;
         top: 40px;
         z-index: 1000;
     }
-
+    #divDebug{
+        margin-top: 40px;
+    }   
     .board
     {
     margin-top: 20px;
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
