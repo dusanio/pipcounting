@@ -18,6 +18,8 @@ function submitGuess()
   else{
     pipResult.innerHTML = "Not quite, correct answer was " + pip_count;
   }
+
+  inpGuess.value = "";
 }
 
 function resetCheckers(){
