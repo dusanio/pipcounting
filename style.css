@@ -175,8 +175,12 @@ top: -60px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     vertical-align: middle;
-    background-color: dodger;
     border: 2px dashed #298e46;
+    outline: none;
+}
+
+#inpGuess:focus{
+    border: 2px solid #298e46;
 }
 
 #pipResult{
@@ -386,9 +390,8 @@ top: -60px;
         white-space: nowrap;
       }
 
-      #inpGuess{
-        font-size: 20px;
-
+      #inpGuess:focus{
+        border: 2px solid #298e46;
       }
 
     .left-side{
@@ -410,6 +413,8 @@ top: -60px;
     #divDebug{
         margin-top: 10px;
     }   
+
+
     .board
     {
     margin-top: 20px;
