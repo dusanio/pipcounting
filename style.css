@@ -129,6 +129,7 @@ top: -60px;
 }
 
 .board {
+    display: inline-block;
     position: absolute;
     margin-top: 29%;
     margin-left: 50%;
@@ -165,9 +166,78 @@ top: -60px;
     z-index: 1000;
 }
 
-.border-gradient {
-    border-image-source: radial-gradient(#6e4f3f, #8e5f4f, #6e4f3f, #8e5f4f, #6e4f3f, #8e5f4f, #6e4f3f, #8e5f4f);
-    /* background: radial-gradient(#8e5f4f, #6e4f3f, #8e5f4f, #6e4f3f); */
+#divDebug{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#inpGuess{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    vertical-align: middle;
+    background-color: dodger;
+    border: 2px dashed #298e46;
+}
+
+#pipResult{
+    color: #298e46;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 800;
+}
+
+.button-reuse {
+  vertical-align: middle;
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-reuse:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-reuse:hover {
+  background-color: #2c974b;
+}
+
+.button-reuse:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-reuse:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-reuse:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
 
 @media only screen and (min-width: 1920px){

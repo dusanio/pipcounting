@@ -13,7 +13,7 @@
 <body onload="init()">
     <center>
 
-        <div class='board border-gradient'>
+        <div class='board'>
             <img src="board.png">
             <div class="left-side">
                 <div style="display: flex;">
@@ -296,10 +296,13 @@
             </div>
         </div>
 
-
-
-  <div id='divDebug'></div>
-  <input id='inpGuess' onChange="submitGuess();"> </input>
+        <div id='divDebug'>
+            <!--<button class="button-reuse" onclick="init()">Play Again</button>-->
+            <input id='inpGuess'> </input>
+            <button class="button-reuse" onclick="submitGuess(); resetCheckers(); init();">Submit</button>
+            <p id="pipResult"></p>
+        </div>
+    </center>
 
 </body>
 

@@ -6,18 +6,31 @@ var pip_count;
 function submitGuess()
 {
   var final_time = new Date();
-  divDebug.innerHTML = final_time - initial_time;
+  pipResult.innerHTML = final_time - initial_time;
   if (parseInt(inpGuess.value) == pip_count)
   {
-    divDebug.innerHTML = "Correct! Time: " + ((final_time - initial_time) / 1000) + " sec";
+    pipResult.innerHTML = "Correct! Time: " + ((final_time - initial_time) / 1000) + " sec, keep going";
   }
-  else
+  else if (isNaN(inpGuess.value))
   {
-    divDebug.innerHTML = "Correct answer was " + pip_count;
+    pipResult.innerHTML = "Hmmm... Your answer is not a number";
+  }
+  else{
+    pipResult.innerHTML = "Not quite, correct answer was " + pip_count;
   }
 }
 
-
+function resetCheckers(){
+  for(var i = 1; i <= NUM_PIPS; i++)
+  {
+    if(i == 12) continue;
+    for(var j = 1; j <= 5; j++)
+    {
+      document.getElementById("checker" + i + "_" + j + "_white").style.display = "none";
+      document.getElementById("checker" + i + "_" + j + "_black").style.display = "none";
+    }
+  }
+}
 
 function init()
 {
