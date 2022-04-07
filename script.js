@@ -15,6 +15,10 @@ function submitGuess()
   {
     pipResult.innerHTML = "Hmmm... Your answer is not a number";
   }
+  else if (inpGuess.value.length == 0)
+  {
+    pipResult.innerHTML = "Hmmm... You didnt type anything";
+  }
   else{
     pipResult.innerHTML = "Not quite, correct answer was " + pip_count;
   }
