@@ -249,7 +249,10 @@ top: -60px;
     /*background: linear-gradient(90deg, #8e5f4f, #6e4f3f);*/
     background: radial-gradient(#8e5f4f, #6e4f3f, #8e5f4f, #6e4f3f);
     }
-
+    
+    #divDebug{
+        margin-top: 0;
+    }
 
     .frame{
         background-image: url("board.png");
@@ -294,6 +297,14 @@ top: -60px;
     }
     .circle-shift5_bottom {
     top: -108px;
+    }
+
+    .circle-shift5, .circle-shift5_bottom{
+        font-weight: bold;
+        font-family: Verdana;
+        font-size: 20pt;
+        /*display: flex;*/
+        line-height: 108px;
     }
 
     .between-gap{
