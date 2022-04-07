@@ -13,12 +13,39 @@ body {
     background-size: cover;
 }
 
+.credits-div{
+    width: fit-content;
+    background-color: #298e46;
+    padding: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 14px;
+}
 
-.bar {
-    width: 48px;
-    /* background-color: #8e5f4f; */
-    /* background: linear-gradient(90deg, #8e5f4f, #6e4f3f); */
-    background: radial-gradient(#8e5f4f, #6e4f3f, #8e5f4f, #6e4f3f);
+.goldenninja{
+    font-size: 15px;
+    cursor: pointer;
+    color: gold;
+    font-weight: bold;
+}
+
+.goldenninja:hover{
+    font-size: 16px;
+    transition: 0.25s;
+    color: #EEBC1D;
+}
+
+.silverninja{
+    font-size: 15px;
+    cursor: pointer;
+    color: silver;
+    font-weight: bold;
+}
+
+.silverninja:hover{
+    font-size: 16px;
+    transition: 0.25s;
+    color: #afafaf;
 }
 
 .between-gap{
@@ -246,13 +273,6 @@ top: -60px;
 
 @media only screen and (min-width: 1920px){
 
-    .bar
-    {
-    width: 88px;
-    /*background-color: #8e5f4f;*/
-    /*background: linear-gradient(90deg, #8e5f4f, #6e4f3f);*/
-    background: radial-gradient(#8e5f4f, #6e4f3f, #8e5f4f, #6e4f3f);
-    }
     
     #divDebug{
         margin-top: 0;
