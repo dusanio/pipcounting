@@ -17,7 +17,7 @@ function submitGuess()
   }
   else if (inpGuess.value.length == 0)
   {
-    pipResult.innerHTML = "Hmmm... You didnt type anything";
+    pipResult.innerHTML = "Hmmm... You didn't type anything";
   }
   else{
     pipResult.innerHTML = "Not quite, correct answer was " + pip_count;
