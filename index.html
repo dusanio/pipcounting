@@ -1,313 +1,976 @@
 <html>
-<!-- sup -->
+  <!-- sup -->
 
-<head>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
     <title>PIPcounting.org</title>
+  </head>
 
-</head>
-
-<body onload="init()">
+  <body onload="init()">
     <center>
+      <div class="credits-div">
+        <span
+          >Made by
+          <a
+            href="https://github.com/dusanio"
+            target="_blank"
+            class="goldenninja"
+            >GoldenNinja</a
+          >
+          and
+          <a
+            href="https://github.com/SilverNinja3"
+            target="_blank"
+            class="silverninja"
+            >SilverNinja</a
+          ></span
+        >
+      </div>
 
-        <div class="credits-div">
-            <span>Made by <a href="https://github.com/dusanio" target=_blank class="goldenninja">GoldenNinja</a> and
-                <a href="https://github.com/SilverNinja3" target=_blank class="silverninja">SilverNinja</a></span>
+      <div class="board">
+        <img src="board.png" />
+        <div class="left-side">
+          <div style="display: flex">
+            <div id="pip13" class="triangle1-top"></div>
+            <div id="checker13_1_white" class="circle-white"></div>
+            <div
+              id="checker13_2_white"
+              class="circle-white circle-shift2"
+            ></div>
+            <div
+              id="checker13_3_white"
+              class="circle-white circle-shift3"
+            ></div>
+            <div
+              id="checker13_4_white"
+              class="circle-white circle-shift4"
+            ></div>
+            <div
+              id="checker13_5_white"
+              class="circle-white circle-shift5"
+            ></div>
+            <div id="checker13_1_black" class="circle-black"></div>
+            <div
+              id="checker13_2_black"
+              class="circle-black circle-shift2"
+            ></div>
+            <div
+              id="checker13_3_black"
+              class="circle-black circle-shift3"
+            ></div>
+            <div
+              id="checker13_4_black"
+              class="circle-black circle-shift4"
+            ></div>
+            <div
+              id="checker13_5_black"
+              class="circle-black circle-shift5"
+            ></div>
+            <div id="pip14" class="triangle2-top"></div>
+            <div id="checker14_1_white" class="circle-white"></div>
+            <div
+              id="checker14_2_white"
+              class="circle-white circle-shift2"
+            ></div>
+            <div
+              id="checker14_3_white"
+              class="circle-white circle-shift3"
+            ></div>
+            <div
+              id="checker14_4_white"
+              class="circle-white circle-shift4"
+            ></div>
+            <div
+              id="checker14_5_white"
+              class="circle-white circle-shift5"
+            ></div>
+            <div id="checker14_1_black" class="circle-black"></div>
+            <div
+              id="checker14_2_black"
+              class="circle-black circle-shift2"
+            ></div>
+            <div
+              id="checker14_3_black"
+              class="circle-black circle-shift3"
+            ></div>
+            <div
+              id="checker14_4_black"
+              class="circle-black circle-shift4"
+            ></div>
+            <div
+              id="checker14_5_black"
+              class="circle-black circle-shift5"
+            ></div>
+            <div id="pip15" class="triangle1-top"></div>
+            <div id="checker15_1_white" class="circle-white"></div>
+            <div
+              id="checker15_2_white"
+              class="circle-white circle-shift2"
+            ></div>
+            <div
+              id="checker15_3_white"
+              class="circle-white circle-shift3"
+            ></div>
+            <div
+              id="checker15_4_white"
+              class="circle-white circle-shift4"
+            ></div>
+            <div
+              id="checker15_5_white"
+              class="circle-white circle-shift5"
+            ></div>
+            <div id="checker15_1_black" class="circle-black"></div>
+            <div
+              id="checker15_2_black"
+              class="circle-black circle-shift2"
+            ></div>
+            <div
+              id="checker15_3_black"
+              class="circle-black circle-shift3"
+            ></div>
+            <div
+              id="checker15_4_black"
+              class="circle-black circle-shift4"
+            ></div>
+            <div
+              id="checker15_5_black"
+              class="circle-black circle-shift5"
+            ></div>
+            <div id="pip16" class="triangle2-top"></div>
+            <div id="checker16_1_white" class="circle-white"></div>
+            <div
+              id="checker16_2_white"
+              class="circle-white circle-shift2"
+            ></div>
+            <div
+              id="checker16_3_white"
+              class="circle-white circle-shift3"
+            ></div>
+            <div
+              id="checker16_4_white"
+              class="circle-white circle-shift4"
+            ></div>
+            <div
+              id="checker16_5_white"
+              class="circle-white circle-shift5"
+            ></div>
+            <div id="checker16_1_black" class="circle-black"></div>
+            <div
+              id="checker16_2_black"
+              class="circle-black circle-shift2"
+            ></div>
+            <div
+              id="checker16_3_black"
+              class="circle-black circle-shift3"
+            ></div>
+            <div
+              id="checker16_4_black"
+              class="circle-black circle-shift4"
+            ></div>
+            <div
+              id="checker16_5_black"
+              class="circle-black circle-shift5"
+            ></div>
+            <div id="pip17" class="triangle1-top"></div>
+            <div id="checker17_1_white" class="circle-white"></div>
+            <div
+              id="checker17_2_white"
+              class="circle-white circle-shift2"
+            ></div>
+            <div
+              id="checker17_3_white"
+              class="circle-white circle-shift3"
+            ></div>
+            <div
+              id="checker17_4_white"
+              class="circle-white circle-shift4"
+            ></div>
+            <div
+              id="checker17_5_white"
+              class="circle-white circle-shift5"
+            ></div>
+            <div id="checker17_1_black" class="circle-black"></div>
+            <div
+              id="checker17_2_black"
+              class="circle-black circle-shift2"
+            ></div>
+            <div
+              id="checker17_3_black"
+              class="circle-black circle-shift3"
+            ></div>
+            <div
+              id="checker17_4_black"
+              class="circle-black circle-shift4"
+            ></div>
+            <div
+              id="checker17_5_black"
+              class="circle-black circle-shift5"
+            ></div>
+            <div id="pip18" class="triangle2-top"></div>
+            <div id="checker18_1_white" class="circle-white"></div>
+            <div
+              id="checker18_2_white"
+              class="circle-white circle-shift2"
+            ></div>
+            <div
+              id="checker18_3_white"
+              class="circle-white circle-shift3"
+            ></div>
+            <div
+              id="checker18_4_white"
+              class="circle-white circle-shift4"
+            ></div>
+            <div
+              id="checker18_5_white"
+              class="circle-white circle-shift5"
+            ></div>
+            <div id="checker18_1_black" class="circle-black"></div>
+            <div
+              id="checker18_2_black"
+              class="circle-black circle-shift2"
+            ></div>
+            <div
+              id="checker18_3_black"
+              class="circle-black circle-shift3"
+            ></div>
+            <div
+              id="checker18_4_black"
+              class="circle-black circle-shift4"
+            ></div>
+            <div
+              id="checker18_5_black"
+              class="circle-black circle-shift5"
+            ></div>
+          </div>
+
+          <div class="between-gap">
+            <div id="pip12" class="triangle1-bottom"></div>
+            <div
+              id="checker12_1_white"
+              class="circle-white circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker12_2_white"
+              class="circle-white circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker12_3_white"
+              class="circle-white circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker12_4_white"
+              class="circle-white circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker12_5_white"
+              class="circle-white circle-shift5_bottom"
+            ></div>
+            <div
+              id="checker14_1_black"
+              class="circle-black circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker14_2_black"
+              class="circle-black circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker14_3_black"
+              class="circle-black circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker14_4_black"
+              class="circle-black circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker14_5_black"
+              class="circle-black circle-shift5_bottom"
+            ></div>
+            <div id="pip11" class="triangle2-bottom"></div>
+            <div
+              id="checker11_1_white"
+              class="circle-white circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker11_2_white"
+              class="circle-white circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker11_3_white"
+              class="circle-white circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker11_4_white"
+              class="circle-white circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker11_5_white"
+              class="circle-white circle-shift5_bottom"
+            ></div>
+            <div
+              id="checker11_1_black"
+              class="circle-black circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker11_2_black"
+              class="circle-black circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker11_3_black"
+              class="circle-black circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker11_4_black"
+              class="circle-black circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker11_5_black"
+              class="circle-black circle-shift5_bottom"
+            ></div>
+            <div id="pip10" class="triangle1-bottom"></div>
+            <div
+              id="checker10_1_white"
+              class="circle-white circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker10_2_white"
+              class="circle-white circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker10_3_white"
+              class="circle-white circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker10_4_white"
+              class="circle-white circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker10_5_white"
+              class="circle-white circle-shift5_bottom"
+            ></div>
+            <div
+              id="checker10_1_black"
+              class="circle-black circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker10_2_black"
+              class="circle-black circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker10_3_black"
+              class="circle-black circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker10_4_black"
+              class="circle-black circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker10_5_black"
+              class="circle-black circle-shift5_bottom"
+            ></div>
+            <div id="pip9" class="triangle2-bottom"></div>
+            <div
+              id="checker9_1_white"
+              class="circle-white circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker9_2_white"
+              class="circle-white circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker9_3_white"
+              class="circle-white circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker9_4_white"
+              class="circle-white circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker9_5_white"
+              class="circle-white circle-shift5_bottom"
+            ></div>
+            <div
+              id="checker9_1_black"
+              class="circle-black circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker9_2_black"
+              class="circle-black circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker9_3_black"
+              class="circle-black circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker9_4_black"
+              class="circle-black circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker9_5_black"
+              class="circle-black circle-shift5_bottom"
+            ></div>
+            <div id="pip8" class="triangle1-bottom"></div>
+            <div
+              id="checker8_1_white"
+              class="circle-white circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker8_2_white"
+              class="circle-white circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker8_3_white"
+              class="circle-white circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker8_4_white"
+              class="circle-white circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker8_5_white"
+              class="circle-white circle-shift5_bottom"
+            ></div>
+            <div
+              id="checker8_1_black"
+              class="circle-black circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker8_2_black"
+              class="circle-black circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker8_3_black"
+              class="circle-black circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker8_4_black"
+              class="circle-black circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker8_5_black"
+              class="circle-black circle-shift5_bottom"
+            ></div>
+            <div id="pip7" class="triangle2-bottom"></div>
+            <div
+              id="checker7_1_white"
+              class="circle-white circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker7_2_white"
+              class="circle-white circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker7_3_white"
+              class="circle-white circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker7_4_white"
+              class="circle-white circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker7_5_white"
+              class="circle-white circle-shift5_bottom"
+            ></div>
+            <div
+              id="checker7_1_black"
+              class="circle-black circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker7_2_black"
+              class="circle-black circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker7_3_black"
+              class="circle-black circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker7_4_black"
+              class="circle-black circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker7_5_black"
+              class="circle-black circle-shift5_bottom"
+            ></div>
+          </div>
         </div>
+        <div class="right-side">
+          <div style="display: flex">
+            <div id="pip19" class="triangle1-top"></div>
+            <div id="checker19_1_white" class="circle-white"></div>
+            <div
+              id="checker19_2_white"
+              class="circle-white circle-shift2"
+            ></div>
+            <div
+              id="checker19_3_white"
+              class="circle-white circle-shift3"
+            ></div>
+            <div
+              id="checker19_4_white"
+              class="circle-white circle-shift4"
+            ></div>
+            <div
+              id="checker19_5_white"
+              class="circle-white circle-shift5"
+            ></div>
+            <div id="checker19_1_black" class="circle-black"></div>
+            <div
+              id="checker19_2_black"
+              class="circle-black circle-shift2"
+            ></div>
+            <div
+              id="checker19_3_black"
+              class="circle-black circle-shift3"
+            ></div>
+            <div
+              id="checker19_4_black"
+              class="circle-black circle-shift4"
+            ></div>
+            <div
+              id="checker19_5_black"
+              class="circle-black circle-shift5"
+            ></div>
+            <div id="pip20" class="triangle2-top"></div>
+            <div class="circle-white" id="checker1"></div>
+            <div id="checker20_1_white" class="circle-white"></div>
+            <div
+              id="checker20_2_white"
+              class="circle-white circle-shift2"
+            ></div>
+            <div
+              id="checker20_3_white"
+              class="circle-white circle-shift3"
+            ></div>
+            <div
+              id="checker20_4_white"
+              class="circle-white circle-shift4"
+            ></div>
+            <div
+              id="checker20_5_white"
+              class="circle-white circle-shift5"
+            ></div>
+            <div id="checker20_1_black" class="circle-black"></div>
+            <div
+              id="checker20_2_black"
+              class="circle-black circle-shift2"
+            ></div>
+            <div
+              id="checker20_3_black"
+              class="circle-black circle-shift3"
+            ></div>
+            <div
+              id="checker20_4_black"
+              class="circle-black circle-shift4"
+            ></div>
+            <div
+              id="checker20_5_black"
+              class="circle-black circle-shift5"
+            ></div>
+            <div id="pip21" class="triangle1-top"></div>
+            <div id="checker21_1_white" class="circle-white"></div>
+            <div
+              id="checker21_2_white"
+              class="circle-white circle-shift2"
+            ></div>
+            <div
+              id="checker21_3_white"
+              class="circle-white circle-shift3"
+            ></div>
+            <div
+              id="checker21_4_white"
+              class="circle-white circle-shift4"
+            ></div>
+            <div
+              id="checker21_5_white"
+              class="circle-white circle-shift5"
+            ></div>
+            <div id="checker21_1_black" class="circle-black"></div>
+            <div
+              id="checker21_2_black"
+              class="circle-black circle-shift2"
+            ></div>
+            <div
+              id="checker21_3_black"
+              class="circle-black circle-shift3"
+            ></div>
+            <div
+              id="checker21_4_black"
+              class="circle-black circle-shift4"
+            ></div>
+            <div
+              id="checker21_5_black"
+              class="circle-black circle-shift5"
+            ></div>
+            <div id="pip22" class="triangle2-top"></div>
+            <div id="checker22_1_white" class="circle-white"></div>
+            <div
+              id="checker22_2_white"
+              class="circle-white circle-shift2"
+            ></div>
+            <div
+              id="checker22_3_white"
+              class="circle-white circle-shift3"
+            ></div>
+            <div
+              id="checker22_4_white"
+              class="circle-white circle-shift4"
+            ></div>
+            <div
+              id="checker22_5_white"
+              class="circle-white circle-shift5"
+            ></div>
+            <div id="checker22_1_black" class="circle-black"></div>
+            <div
+              id="checker22_2_black"
+              class="circle-black circle-shift2"
+            ></div>
+            <div
+              id="checker22_3_black"
+              class="circle-black circle-shift3"
+            ></div>
+            <div
+              id="checker22_4_black"
+              class="circle-black circle-shift4"
+            ></div>
+            <div
+              id="checker22_5_black"
+              class="circle-black circle-shift5"
+            ></div>
+            <div id="pip23" class="triangle1-top"></div>
+            <div id="checker23_1_white" class="circle-white"></div>
+            <div
+              id="checker23_2_white"
+              class="circle-white circle-shift2"
+            ></div>
+            <div
+              id="checker23_3_white"
+              class="circle-white circle-shift3"
+            ></div>
+            <div
+              id="checker23_4_white"
+              class="circle-white circle-shift4"
+            ></div>
+            <div
+              id="checker23_5_white"
+              class="circle-white circle-shift5"
+            ></div>
+            <div id="checker23_1_black" class="circle-black"></div>
+            <div
+              id="checker23_2_black"
+              class="circle-black circle-shift2"
+            ></div>
+            <div
+              id="checker23_3_black"
+              class="circle-black circle-shift3"
+            ></div>
+            <div
+              id="checker23_4_black"
+              class="circle-black circle-shift4"
+            ></div>
+            <div
+              id="checker23_5_black"
+              class="circle-black circle-shift5"
+            ></div>
+            <div id="pip24" class="triangle2-top"></div>
+            <div id="checker24_1_white" class="circle-white"></div>
+            <div
+              id="checker24_2_white"
+              class="circle-white circle-shift2"
+            ></div>
+            <div
+              id="checker24_3_white"
+              class="circle-white circle-shift3"
+            ></div>
+            <div
+              id="checker24_4_white"
+              class="circle-white circle-shift4"
+            ></div>
+            <div
+              id="checker24_5_white"
+              class="circle-white circle-shift5"
+            ></div>
+            <div id="checker24_1_black" class="circle-black"></div>
+            <div
+              id="checker24_2_black"
+              class="circle-black circle-shift2"
+            ></div>
+            <div
+              id="checker24_3_black"
+              class="circle-black circle-shift3"
+            ></div>
+            <div
+              id="checker24_4_black"
+              class="circle-black circle-shift4"
+            ></div>
+            <div
+              id="checker24_5_black"
+              class="circle-black circle-shift5"
+            ></div>
+          </div>
 
-        <div class='board'>
-            <img src="board.png">
-            <div class="left-side">
-                <div style="display: flex;">
-                    <div id='pip13' class='triangle1-top'></div>
-                    <div id='checker13_1_white' class='circle-white'></div>
-                    <div id='checker13_2_white' class='circle-white circle-shift2'></div>
-                    <div id='checker13_3_white' class='circle-white circle-shift3'></div>
-                    <div id='checker13_4_white' class='circle-white circle-shift4'></div>
-                    <div id='checker13_5_white' class='circle-white circle-shift5'></div>
-                    <div id='checker13_1_black' class='circle-black'></div>
-                    <div id='checker13_2_black' class='circle-black circle-shift2'></div>
-                    <div id='checker13_3_black' class='circle-black circle-shift3'></div>
-                    <div id='checker13_4_black' class='circle-black circle-shift4'></div>
-                    <div id='checker13_5_black' class='circle-black circle-shift5'></div>
-                    <div id='pip14' class='triangle2-top'></div>
-                    <div id='checker14_1_white' class='circle-white'></div>
-                    <div id='checker14_2_white' class='circle-white circle-shift2'></div>
-                    <div id='checker14_3_white' class='circle-white circle-shift3'></div>
-                    <div id='checker14_4_white' class='circle-white circle-shift4'></div>
-                    <div id='checker14_5_white' class='circle-white circle-shift5'></div>
-                    <div id='checker14_1_black' class='circle-black'></div>
-                    <div id='checker14_2_black' class='circle-black circle-shift2'></div>
-                    <div id='checker14_3_black' class='circle-black circle-shift3'></div>
-                    <div id='checker14_4_black' class='circle-black circle-shift4'></div>
-                    <div id='checker14_5_black' class='circle-black circle-shift5'></div>
-                    <div id='pip15' class='triangle1-top'></div>
-                    <div id='checker15_1_white' class='circle-white'></div>
-                    <div id='checker15_2_white' class='circle-white circle-shift2'></div>
-                    <div id='checker15_3_white' class='circle-white circle-shift3'></div>
-                    <div id='checker15_4_white' class='circle-white circle-shift4'></div>
-                    <div id='checker15_5_white' class='circle-white circle-shift5'></div>
-                    <div id='checker15_1_black' class='circle-black'></div>
-                    <div id='checker15_2_black' class='circle-black circle-shift2'></div>
-                    <div id='checker15_3_black' class='circle-black circle-shift3'></div>
-                    <div id='checker15_4_black' class='circle-black circle-shift4'></div>
-                    <div id='checker15_5_black' class='circle-black circle-shift5'></div>
-                    <div id='pip16' class='triangle2-top'></div>
-                    <div id='checker16_1_white' class='circle-white'></div>
-                    <div id='checker16_2_white' class='circle-white circle-shift2'></div>
-                    <div id='checker16_3_white' class='circle-white circle-shift3'></div>
-                    <div id='checker16_4_white' class='circle-white circle-shift4'></div>
-                    <div id='checker16_5_white' class='circle-white circle-shift5'></div>
-                    <div id='checker16_1_black' class='circle-black'></div>
-                    <div id='checker16_2_black' class='circle-black circle-shift2'></div>
-                    <div id='checker16_3_black' class='circle-black circle-shift3'></div>
-                    <div id='checker16_4_black' class='circle-black circle-shift4'></div>
-                    <div id='checker16_5_black' class='circle-black circle-shift5'></div>
-                    <div id='pip17' class='triangle1-top'></div>
-                    <div id='checker17_1_white' class='circle-white'></div>
-                    <div id='checker17_2_white' class='circle-white circle-shift2'></div>
-                    <div id='checker17_3_white' class='circle-white circle-shift3'></div>
-                    <div id='checker17_4_white' class='circle-white circle-shift4'></div>
-                    <div id='checker17_5_white' class='circle-white circle-shift5'></div>
-                    <div id='checker17_1_black' class='circle-black'></div>
-                    <div id='checker17_2_black' class='circle-black circle-shift2'></div>
-                    <div id='checker17_3_black' class='circle-black circle-shift3'></div>
-                    <div id='checker17_4_black' class='circle-black circle-shift4'></div>
-                    <div id='checker17_5_black' class='circle-black circle-shift5'></div>
-                    <div id='pip18' class='triangle2-top'></div>
-                    <div id='checker18_1_white' class='circle-white'></div>
-                    <div id='checker18_2_white' class='circle-white circle-shift2'></div>
-                    <div id='checker18_3_white' class='circle-white circle-shift3'></div>
-                    <div id='checker18_4_white' class='circle-white circle-shift4'></div>
-                    <div id='checker18_5_white' class='circle-white circle-shift5'></div>
-                    <div id='checker18_1_black' class='circle-black'></div>
-                    <div id='checker18_2_black' class='circle-black circle-shift2'></div>
-                    <div id='checker18_3_black' class='circle-black circle-shift3'></div>
-                    <div id='checker18_4_black' class='circle-black circle-shift4'></div>
-                    <div id='checker18_5_black' class='circle-black circle-shift5'></div>
-                </div>
-
-                <div class="between-gap">
-                    <div id='pip12' class='triangle1-bottom'></div>
-                    <div id='checker12_1_white' class='circle-white circle-shift1_bottom'></div>
-                    <div id='checker12_2_white' class='circle-white circle-shift2_bottom'></div>
-                    <div id='checker12_3_white' class='circle-white circle-shift3_bottom'></div>
-                    <div id='checker12_4_white' class='circle-white circle-shift4_bottom'></div>
-                    <div id='checker12_5_white' class='circle-white circle-shift5_bottom'></div>
-                    <div id='checker14_1_black' class='circle-black circle-shift1_bottom'></div>
-                    <div id='checker14_2_black' class='circle-black circle-shift2_bottom'></div>
-                    <div id='checker14_3_black' class='circle-black circle-shift3_bottom'></div>
-                    <div id='checker14_4_black' class='circle-black circle-shift4_bottom'></div>
-                    <div id='checker14_5_black' class='circle-black circle-shift5_bottom'></div>
-                    <div id='pip11' class='triangle2-bottom'></div>
-                    <div id='checker11_1_white' class='circle-white circle-shift1_bottom'></div>
-                    <div id='checker11_2_white' class='circle-white circle-shift2_bottom'></div>
-                    <div id='checker11_3_white' class='circle-white circle-shift3_bottom'></div>
-                    <div id='checker11_4_white' class='circle-white circle-shift4_bottom'></div>
-                    <div id='checker11_5_white' class='circle-white circle-shift5_bottom'></div>
-                    <div id='checker11_1_black' class='circle-black circle-shift1_bottom'></div>
-                    <div id='checker11_2_black' class='circle-black circle-shift2_bottom'></div>
-                    <div id='checker11_3_black' class='circle-black circle-shift3_bottom'></div>
-                    <div id='checker11_4_black' class='circle-black circle-shift4_bottom'></div>
-                    <div id='checker11_5_black' class='circle-black circle-shift5_bottom'></div>
-                    <div id='pip10' class='triangle1-bottom'></div>
-                    <div id='checker10_1_white' class='circle-white circle-shift1_bottom'></div>
-                    <div id='checker10_2_white' class='circle-white circle-shift2_bottom'></div>
-                    <div id='checker10_3_white' class='circle-white circle-shift3_bottom'></div>
-                    <div id='checker10_4_white' class='circle-white circle-shift4_bottom'></div>
-                    <div id='checker10_5_white' class='circle-white circle-shift5_bottom'></div>
-                    <div id='checker10_1_black' class='circle-black circle-shift1_bottom'></div>
-                    <div id='checker10_2_black' class='circle-black circle-shift2_bottom'></div>
-                    <div id='checker10_3_black' class='circle-black circle-shift3_bottom'></div>
-                    <div id='checker10_4_black' class='circle-black circle-shift4_bottom'></div>
-                    <div id='checker10_5_black' class='circle-black circle-shift5_bottom'></div>
-                    <div id='pip9' class='triangle2-bottom'></div>
-                    <div id='checker9_1_white' class='circle-white circle-shift1_bottom'></div>
-                    <div id='checker9_2_white' class='circle-white circle-shift2_bottom'></div>
-                    <div id='checker9_3_white' class='circle-white circle-shift3_bottom'></div>
-                    <div id='checker9_4_white' class='circle-white circle-shift4_bottom'></div>
-                    <div id='checker9_5_white' class='circle-white circle-shift5_bottom'></div>
-                    <div id='checker9_1_black' class='circle-black circle-shift1_bottom'></div>
-                    <div id='checker9_2_black' class='circle-black circle-shift2_bottom'></div>
-                    <div id='checker9_3_black' class='circle-black circle-shift3_bottom'></div>
-                    <div id='checker9_4_black' class='circle-black circle-shift4_bottom'></div>
-                    <div id='checker9_5_black' class='circle-black circle-shift5_bottom'></div>
-                    <div id='pip8' class='triangle1-bottom'></div>
-                    <div id='checker8_1_white' class='circle-white circle-shift1_bottom'></div>
-                    <div id='checker8_2_white' class='circle-white circle-shift2_bottom'></div>
-                    <div id='checker8_3_white' class='circle-white circle-shift3_bottom'></div>
-                    <div id='checker8_4_white' class='circle-white circle-shift4_bottom'></div>
-                    <div id='checker8_5_white' class='circle-white circle-shift5_bottom'></div>
-                    <div id='checker8_1_black' class='circle-black circle-shift1_bottom'></div>
-                    <div id='checker8_2_black' class='circle-black circle-shift2_bottom'></div>
-                    <div id='checker8_3_black' class='circle-black circle-shift3_bottom'></div>
-                    <div id='checker8_4_black' class='circle-black circle-shift4_bottom'></div>
-                    <div id='checker8_5_black' class='circle-black circle-shift5_bottom'></div>
-                    <div id='pip7' class='triangle2-bottom'></div>
-                    <div id='checker7_1_white' class='circle-white circle-shift1_bottom'></div>
-                    <div id='checker7_2_white' class='circle-white circle-shift2_bottom'></div>
-                    <div id='checker7_3_white' class='circle-white circle-shift3_bottom'></div>
-                    <div id='checker7_4_white' class='circle-white circle-shift4_bottom'></div>
-                    <div id='checker7_5_white' class='circle-white circle-shift5_bottom'></div>
-                    <div id='checker7_1_black' class='circle-black circle-shift1_bottom'></div>
-                    <div id='checker7_2_black' class='circle-black circle-shift2_bottom'></div>
-                    <div id='checker7_3_black' class='circle-black circle-shift3_bottom'></div>
-                    <div id='checker7_4_black' class='circle-black circle-shift4_bottom'></div>
-                    <div id='checker7_5_black' class='circle-black circle-shift5_bottom'></div>
-                </div>
-            </div>
-            <div class="right-side">
-                <div style="display: flex;">
-                    <div id='pip19' class='triangle1-top'></div>
-                    <div id='checker19_1_white' class='circle-white'></div>
-                    <div id='checker19_2_white' class='circle-white circle-shift2'></div>
-                    <div id='checker19_3_white' class='circle-white circle-shift3'></div>
-                    <div id='checker19_4_white' class='circle-white circle-shift4'></div>
-                    <div id='checker19_5_white' class='circle-white circle-shift5'></div>
-                    <div id='checker19_1_black' class='circle-black'></div>
-                    <div id='checker19_2_black' class='circle-black circle-shift2'></div>
-                    <div id='checker19_3_black' class='circle-black circle-shift3'></div>
-                    <div id='checker19_4_black' class='circle-black circle-shift4'></div>
-                    <div id='checker19_5_black' class='circle-black circle-shift5'></div>
-                    <div id='pip20' class='triangle2-top'></div>
-                    <div class='circle-white' id="checker1"></div>
-                    <div id='checker20_1_white' class='circle-white'></div>
-                    <div id='checker20_2_white' class='circle-white circle-shift2'></div>
-                    <div id='checker20_3_white' class='circle-white circle-shift3'></div>
-                    <div id='checker20_4_white' class='circle-white circle-shift4'></div>
-                    <div id='checker20_5_white' class='circle-white circle-shift5'></div>
-                    <div id='checker20_1_black' class='circle-black'></div>
-                    <div id='checker20_2_black' class='circle-black circle-shift2'></div>
-                    <div id='checker20_3_black' class='circle-black circle-shift3'></div>
-                    <div id='checker20_4_black' class='circle-black circle-shift4'></div>
-                    <div id='checker20_5_black' class='circle-black circle-shift5'></div>
-                    <div id='pip21' class='triangle1-top'></div>
-                    <div id='checker21_1_white' class='circle-white'></div>
-                    <div id='checker21_2_white' class='circle-white circle-shift2'></div>
-                    <div id='checker21_3_white' class='circle-white circle-shift3'></div>
-                    <div id='checker21_4_white' class='circle-white circle-shift4'></div>
-                    <div id='checker21_5_white' class='circle-white circle-shift5'></div>
-                    <div id='checker21_1_black' class='circle-black'></div>
-                    <div id='checker21_2_black' class='circle-black circle-shift2'></div>
-                    <div id='checker21_3_black' class='circle-black circle-shift3'></div>
-                    <div id='checker21_4_black' class='circle-black circle-shift4'></div>
-                    <div id='checker21_5_black' class='circle-black circle-shift5'></div>
-                    <div id='pip22' class='triangle2-top'></div>
-                    <div id='checker22_1_white' class='circle-white'></div>
-                    <div id='checker22_2_white' class='circle-white circle-shift2'></div>
-                    <div id='checker22_3_white' class='circle-white circle-shift3'></div>
-                    <div id='checker22_4_white' class='circle-white circle-shift4'></div>
-                    <div id='checker22_5_white' class='circle-white circle-shift5'></div>
-                    <div id='checker22_1_black' class='circle-black'></div>
-                    <div id='checker22_2_black' class='circle-black circle-shift2'></div>
-                    <div id='checker22_3_black' class='circle-black circle-shift3'></div>
-                    <div id='checker22_4_black' class='circle-black circle-shift4'></div>
-                    <div id='checker22_5_black' class='circle-black circle-shift5'></div>
-                    <div id='pip23' class='triangle1-top'></div>
-                    <div id='checker23_1_white' class='circle-white'></div>
-                    <div id='checker23_2_white' class='circle-white circle-shift2'></div>
-                    <div id='checker23_3_white' class='circle-white circle-shift3'></div>
-                    <div id='checker23_4_white' class='circle-white circle-shift4'></div>
-                    <div id='checker23_5_white' class='circle-white circle-shift5'></div>
-                    <div id='checker23_1_black' class='circle-black'></div>
-                    <div id='checker23_2_black' class='circle-black circle-shift2'></div>
-                    <div id='checker23_3_black' class='circle-black circle-shift3'></div>
-                    <div id='checker23_4_black' class='circle-black circle-shift4'></div>
-                    <div id='checker23_5_black' class='circle-black circle-shift5'></div>
-                    <div id='pip24' class='triangle2-top'></div>
-                    <div id='checker24_1_white' class='circle-white'></div>
-                    <div id='checker24_2_white' class='circle-white circle-shift2'></div>
-                    <div id='checker24_3_white' class='circle-white circle-shift3'></div>
-                    <div id='checker24_4_white' class='circle-white circle-shift4'></div>
-                    <div id='checker24_5_white' class='circle-white circle-shift5'></div>
-                    <div id='checker24_1_black' class='circle-black'></div>
-                    <div id='checker24_2_black' class='circle-black circle-shift2'></div>
-                    <div id='checker24_3_black' class='circle-black circle-shift3'></div>
-                    <div id='checker24_4_black' class='circle-black circle-shift4'></div>
-                    <div id='checker24_5_black' class='circle-black circle-shift5'></div>
-                </div>
-
-                <div class="between-gap">
-                    <div id='pip6' class='triangle1-bottom'></div>
-                    <div id='checker6_1_white' class='circle-white circle-shift1_bottom'></div>
-                    <div id='checker6_2_white' class='circle-white circle-shift2_bottom'></div>
-                    <div id='checker6_3_white' class='circle-white circle-shift3_bottom'></div>
-                    <div id='checker6_4_white' class='circle-white circle-shift4_bottom'></div>
-                    <div id='checker6_5_white' class='circle-white circle-shift5_bottom'></div>
-                    <div id='checker6_1_black' class='circle-black circle-shift1_bottom'></div>
-                    <div id='checker6_2_black' class='circle-black circle-shift2_bottom'></div>
-                    <div id='checker6_3_black' class='circle-black circle-shift3_bottom'></div>
-                    <div id='checker6_4_black' class='circle-black circle-shift4_bottom'></div>
-                    <div id='checker6_5_black' class='circle-black circle-shift5_bottom'></div>
-                    <div id='pip5' class='triangle2-bottom'></div>
-                    <div id='checker5_1_white' class='circle-white circle-shift1_bottom'></div>
-                    <div id='checker5_2_white' class='circle-white circle-shift2_bottom'></div>
-                    <div id='checker5_3_white' class='circle-white circle-shift3_bottom'></div>
-                    <div id='checker5_4_white' class='circle-white circle-shift4_bottom'></div>
-                    <div id='checker5_5_white' class='circle-white circle-shift5_bottom'></div>
-                    <div id='checker5_1_black' class='circle-black circle-shift1_bottom'></div>
-                    <div id='checker5_2_black' class='circle-black circle-shift2_bottom'></div>
-                    <div id='checker5_3_black' class='circle-black circle-shift3_bottom'></div>
-                    <div id='checker5_4_black' class='circle-black circle-shift4_bottom'></div>
-                    <div id='checker5_5_black' class='circle-black circle-shift5_bottom'></div>
-                    <div id='pip4' class='triangle1-bottom'></div>
-                    <div id='checker4_1_white' class='circle-white circle-shift1_bottom'></div>
-                    <div id='checker4_2_white' class='circle-white circle-shift2_bottom'></div>
-                    <div id='checker4_3_white' class='circle-white circle-shift3_bottom'></div>
-                    <div id='checker4_4_white' class='circle-white circle-shift4_bottom'></div>
-                    <div id='checker4_5_white' class='circle-white circle-shift5_bottom'></div>
-                    <div id='checker4_1_black' class='circle-black circle-shift1_bottom'></div>
-                    <div id='checker4_2_black' class='circle-black circle-shift2_bottom'></div>
-                    <div id='checker4_3_black' class='circle-black circle-shift3_bottom'></div>
-                    <div id='checker4_4_black' class='circle-black circle-shift4_bottom'></div>
-                    <div id='checker4_5_black' class='circle-black circle-shift5_bottom'></div>
-                    <div id='pip3' class='triangle2-bottom'></div>
-                    <div id='checker3_1_white' class='circle-white circle-shift1_bottom'></div>
-                    <div id='checker3_2_white' class='circle-white circle-shift2_bottom'></div>
-                    <div id='checker3_3_white' class='circle-white circle-shift3_bottom'></div>
-                    <div id='checker3_4_white' class='circle-white circle-shift4_bottom'></div>
-                    <div id='checker3_5_white' class='circle-white circle-shift5_bottom'></div>
-                    <div id='checker3_1_black' class='circle-black circle-shift1_bottom'></div>
-                    <div id='checker3_2_black' class='circle-black circle-shift2_bottom'></div>
-                    <div id='checker3_3_black' class='circle-black circle-shift3_bottom'></div>
-                    <div id='checker3_4_black' class='circle-black circle-shift4_bottom'></div>
-                    <div id='checker3_5_black' class='circle-black circle-shift5_bottom'></div>
-                    <div id='pip2' class='triangle1-bottom'></div>
-                    <div id='checker2_1_white' class='circle-white circle-shift1_bottom'></div>
-                    <div id='checker2_2_white' class='circle-white circle-shift2_bottom'></div>
-                    <div id='checker2_3_white' class='circle-white circle-shift3_bottom'></div>
-                    <div id='checker2_4_white' class='circle-white circle-shift4_bottom'></div>
-                    <div id='checker2_5_white' class='circle-white circle-shift5_bottom'></div>
-                    <div id='checker2_1_black' class='circle-black circle-shift1_bottom'></div>
-                    <div id='checker2_2_black' class='circle-black circle-shift2_bottom'></div>
-                    <div id='checker2_3_black' class='circle-black circle-shift3_bottom'></div>
-                    <div id='checker2_4_black' class='circle-black circle-shift4_bottom'></div>
-                    <div id='checker2_5_black' class='circle-black circle-shift5_bottom'></div>
-                    <div id='pip1' class='triangle2-bottom'></div>
-                    <div id='checker1_1_white' class='circle-white circle-shift1_bottom'></div>
-                    <div id='checker1_2_white' class='circle-white circle-shift2_bottom'></div>
-                    <div id='checker1_3_white' class='circle-white circle-shift3_bottom'></div>
-                    <div id='checker1_4_white' class='circle-white circle-shift4_bottom'></div>
-                    <div id='checker1_5_white' class='circle-white circle-shift5_bottom'></div>
-                    <div id='checker1_1_black' class='circle-black circle-shift1_bottom'></div>
-                    <div id='checker1_2_black' class='circle-black circle-shift2_bottom'></div>
-                    <div id='checker1_3_black' class='circle-black circle-shift3_bottom'></div>
-                    <div id='checker1_4_black' class='circle-black circle-shift4_bottom'></div>
-                    <div id='checker1_5_black' class='circle-black circle-shift5_bottom'></div>
-                </div>
-            </div>
+          <div class="between-gap">
+            <div id="pip6" class="triangle1-bottom"></div>
+            <div
+              id="checker6_1_white"
+              class="circle-white circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker6_2_white"
+              class="circle-white circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker6_3_white"
+              class="circle-white circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker6_4_white"
+              class="circle-white circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker6_5_white"
+              class="circle-white circle-shift5_bottom"
+            ></div>
+            <div
+              id="checker6_1_black"
+              class="circle-black circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker6_2_black"
+              class="circle-black circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker6_3_black"
+              class="circle-black circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker6_4_black"
+              class="circle-black circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker6_5_black"
+              class="circle-black circle-shift5_bottom"
+            ></div>
+            <div id="pip5" class="triangle2-bottom"></div>
+            <div
+              id="checker5_1_white"
+              class="circle-white circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker5_2_white"
+              class="circle-white circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker5_3_white"
+              class="circle-white circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker5_4_white"
+              class="circle-white circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker5_5_white"
+              class="circle-white circle-shift5_bottom"
+            ></div>
+            <div
+              id="checker5_1_black"
+              class="circle-black circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker5_2_black"
+              class="circle-black circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker5_3_black"
+              class="circle-black circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker5_4_black"
+              class="circle-black circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker5_5_black"
+              class="circle-black circle-shift5_bottom"
+            ></div>
+            <div id="pip4" class="triangle1-bottom"></div>
+            <div
+              id="checker4_1_white"
+              class="circle-white circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker4_2_white"
+              class="circle-white circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker4_3_white"
+              class="circle-white circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker4_4_white"
+              class="circle-white circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker4_5_white"
+              class="circle-white circle-shift5_bottom"
+            ></div>
+            <div
+              id="checker4_1_black"
+              class="circle-black circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker4_2_black"
+              class="circle-black circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker4_3_black"
+              class="circle-black circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker4_4_black"
+              class="circle-black circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker4_5_black"
+              class="circle-black circle-shift5_bottom"
+            ></div>
+            <div id="pip3" class="triangle2-bottom"></div>
+            <div
+              id="checker3_1_white"
+              class="circle-white circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker3_2_white"
+              class="circle-white circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker3_3_white"
+              class="circle-white circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker3_4_white"
+              class="circle-white circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker3_5_white"
+              class="circle-white circle-shift5_bottom"
+            ></div>
+            <div
+              id="checker3_1_black"
+              class="circle-black circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker3_2_black"
+              class="circle-black circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker3_3_black"
+              class="circle-black circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker3_4_black"
+              class="circle-black circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker3_5_black"
+              class="circle-black circle-shift5_bottom"
+            ></div>
+            <div id="pip2" class="triangle1-bottom"></div>
+            <div
+              id="checker2_1_white"
+              class="circle-white circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker2_2_white"
+              class="circle-white circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker2_3_white"
+              class="circle-white circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker2_4_white"
+              class="circle-white circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker2_5_white"
+              class="circle-white circle-shift5_bottom"
+            ></div>
+            <div
+              id="checker2_1_black"
+              class="circle-black circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker2_2_black"
+              class="circle-black circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker2_3_black"
+              class="circle-black circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker2_4_black"
+              class="circle-black circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker2_5_black"
+              class="circle-black circle-shift5_bottom"
+            ></div>
+            <div id="pip1" class="triangle2-bottom"></div>
+            <div
+              id="checker1_1_white"
+              class="circle-white circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker1_2_white"
+              class="circle-white circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker1_3_white"
+              class="circle-white circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker1_4_white"
+              class="circle-white circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker1_5_white"
+              class="circle-white circle-shift5_bottom"
+            ></div>
+            <div
+              id="checker1_1_black"
+              class="circle-black circle-shift1_bottom"
+            ></div>
+            <div
+              id="checker1_2_black"
+              class="circle-black circle-shift2_bottom"
+            ></div>
+            <div
+              id="checker1_3_black"
+              class="circle-black circle-shift3_bottom"
+            ></div>
+            <div
+              id="checker1_4_black"
+              class="circle-black circle-shift4_bottom"
+            ></div>
+            <div
+              id="checker1_5_black"
+              class="circle-black circle-shift5_bottom"
+            ></div>
+          </div>
         </div>
+      </div>
 
-        <div id='divDebug'>
-            <!--<button class="button-reuse" onclick="init()">Play Again</button>-->
-            <input id='inpGuess'> </input>
-            <button class="button-reuse" onclick="submitGuess(); resetCheckers(); init();">Submit</button>
-            <p id="pipResult"></p>
-        </div>
+      <div id="divDebug">
+        <!--<button class="button-reuse" onclick="init()">Play Again</button>-->
+        <input id="inpGuess" />
+        <button
+          class="button-reuse"
+          onclick="submitGuess(); resetCheckers(); init();"
+        >
+          Submit
+        </button>
+        <p id="pipResult"></p>
+      </div>
     </center>
-
-</body>
-
+  </body>
 </html>
