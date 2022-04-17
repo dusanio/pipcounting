@@ -129,6 +129,6 @@ document.addEventListener('keydown', logKey);
 function logKey(e)
 {
   console.log(`pressed keycode ${e.code}`);
-  if (e.code == 13)
+  if (e.code == "Enter")
     submitGuess();
 }
