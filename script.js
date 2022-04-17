@@ -53,7 +53,7 @@ function init()
     checkers[6] = r;
     i += r;
   }
-  if (randInt(0, 5))
+  if (randInt(0, 1))
   {
     var r = randInt(2, 5);
     checkers[13] = r;
@@ -67,7 +67,7 @@ function init()
   }
   while (i < MAX_CHECKERS)
   {
-    if (randInt(0, 10) && i < MAX_CHECKERS - 1)
+    if (randInt(0, 3) && i < MAX_CHECKERS - 1)
     {
       ++i;
       var r = randInt(1, 13);
@@ -79,16 +79,16 @@ function init()
       {
         r = randInt(3, 11);
       }
-      else if (r == 12 && randInt(0, 5))
+      else if (r == 12 && randInt(0, 1))
       {
-        r = randInt(4, 11);
+        r = randInt(1, 11);
       }
       checkers[r] += 2;
     }
     else if (i < MAX_CHECKERS)
     {
-      var r = randInt(1, 18);
-      if ((r == 19 || r == 17 || r == 12) && randInt(0, 50))
+      var r = randInt(1, 11);
+      if ((r == 19 || r == 17 || r == 12) && randInt(0, 5))
         r = 5;
       checkers[r]++;
     }
