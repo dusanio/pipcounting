@@ -13,7 +13,7 @@ function submitGuess()
   }
   else
   {
-    pipResult.innerHTML = "<font color='#c33'>Incorrect! Time: " + ((final_time - initial_time) / 1000) + " sec, correct answer was " + pip_count;
+    pipResult.innerHTML = "<font color='#900'>Incorrect! Time: " + ((final_time - initial_time) / 1000) + " sec, correct answer was " + pip_count;
   }
 
   //inpGuess.value = "";
