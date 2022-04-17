@@ -123,3 +123,13 @@ function randInt(min, max)
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+document.onkeypress = function (e)
+{
+  e = e || window.event;
+  if (e.keycode == 18)
+  {
+    submitGuess();
+  }
+  // use e.keyCode
+};
