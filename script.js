@@ -16,7 +16,7 @@ function submitGuess()
     pipResult.innerHTML = "Incorrect! Time: " + ((final_time - initial_time) / 1000) + " sec, correct answer was " + pip_count;
   }
 
-  inpGuess.value = "";
+  //inpGuess.value = "";
 }
 
 function resetCheckers()
