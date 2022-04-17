@@ -124,12 +124,11 @@ function randInt(min, max)
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-document.onkeypress = function (e)
+document.addEventListener('keydown', logKey);
+
+function logKey(e)
 {
-  e = e || window.event;
-  if (e.keycode == 18)
-  {
+  log.textContent += ` ${e.code}`;
+  if (e.code == 13)
     submitGuess();
-  }
-  // use e.keyCode
-};
+}
