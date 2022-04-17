@@ -128,7 +128,6 @@ document.addEventListener('keydown', logKey);
 
 function logKey(e)
 {
-  log.textContent += ` ${e.code}`;
   if (e.code == 13)
     submitGuess();
 }
