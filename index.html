@@ -10,7 +10,7 @@
 
   <body onload="init()">
     <center>
-      <div class="credits-div">
+      <div class="credits-div" hidden>
         <span
           >Made by
           <a
@@ -962,13 +962,8 @@
 
       <div id="divDebug">
         <!--<button class="button-reuse" onclick="init()">Play Again</button>-->
-        <input id="inpGuess" />
-        <button
-          class="button-reuse"
-          onclick="submitGuess(); resetCheckers(); init();"
-        >
-          Submit
-        </button>
+        <input id="inpGuess" onchange="submitGuess()" />
+        <button class="button-reuse" onclick="submitGuess();">Submit</button>
         <p id="pipResult"></p>
       </div>
     </center>
