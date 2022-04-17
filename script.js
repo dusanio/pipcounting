@@ -53,13 +53,13 @@ function init()
     checkers[6] = r;
     i += r;
   }
-  if (randInt(0, 1))
+  if (!randInt(0, 2))
   {
-    var r = randInt(2, 5);
+    var r = randInt(1, 5);
     checkers[13] = r;
     i += r;
   }
-  if (randInt(0, 8))
+  if (randInt(0, 3))
   {
     var r = randInt(1, 4);
     checkers[8] = r;
@@ -67,10 +67,10 @@ function init()
   }
   while (i < MAX_CHECKERS)
   {
-    if (randInt(0, 3) && i < MAX_CHECKERS - 1)
+    if (randInt(0, 2) && i < MAX_CHECKERS - 1)
     {
       ++i;
-      var r = randInt(1, 13);
+      var r = randInt(0, 2) ? randInt(1, 6) : randInt(1, 11);
       if (r == 19 && randInt(0, 200))
       {
         r = randInt(20, 24);
