@@ -87,7 +87,7 @@ function init()
     }
     else
     {
-      var r = (randInt(0, 2) && checkers[13]) ? randInt(1, 11) : (randInt(0, 1) ? randInt(13, 18) : randInt(20, 24));
+      var r = (randInt(0, 2) || checkers[13]) ? randInt(1, 11) : (randInt(0, 1) ? randInt(13, 18) : randInt(20, 24));
       if ((r == 19 || r == 17 || r == 12) && randInt(0, 5))
         r = 5;
       checkers[r]++;
