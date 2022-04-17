@@ -9,19 +9,11 @@ function submitGuess()
   pipResult.innerHTML = final_time - initial_time;
   if (parseInt(inpGuess.value) == pip_count)
   {
-    pipResult.innerHTML = "Correct! Time: " + ((final_time - initial_time) / 1000) + " sec, keep going";
-  }
-  else if (isNaN(inpGuess.value))
-  {
-    pipResult.innerHTML = "Hmmm... Your answer is not a number";
-  }
-  else if (inpGuess.value.length == 0)
-  {
-    pipResult.innerHTML = "Hmmm... You didn't type anything";
+    pipResult.innerHTML = "Correct! Time: " + ((final_time - initial_time) / 1000) + " sec";
   }
   else
   {
-    pipResult.innerHTML = "Not quite, correct answer was " + pip_count;
+    pipResult.innerHTML = "Incorrect! Time: " + ((final_time - initial_time) / 1000) + " sec, correct answer was " + pip_count;
   }
 
   inpGuess.value = "";
